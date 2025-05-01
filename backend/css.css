@@ -1,0 +1,96 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Ngăn không cho body cuộn */
+}
+
+body {
+    background: url('../fontend/uploads/nenmo2.png') no-repeat center top/cover;
+}
+
+
+.container {
+    display: flex;
+    margin: 40px;
+    margin-top:80px;
+
+}
+
+.sidebar {
+    width: 160px;
+    background-color: #009451; /* Màu nền xanh */
+    border-top-left-radius: 10px; /* Bo góc trái */
+    border-bottom-left-radius: 10px; /* Bo góc trái */
+    padding-left: 10px;
+    padding-top:10px;
+    padding-bottom: 10px;
+    position: relative; /* Để sử dụng cho vị trí của img */
+    height: 500px;
+    position: absolute;
+
+}
+
+.sidebar h2 {
+    color: white;
+    margin: 0 0 10px 0;
+
+}
+
+.sidebar {
+    position: relative; /* Để các phần tử bên trong có thể sử dụng position absolute */
+}
+
+/* Đặt vị trí của img.ground để nó không che chữ trong li>a */
+#menu {
+    position: relative;
+}
+
+#menu .ground {
+    position: absolute;
+    width: 100%;
+    height: 90px; /* Chiều cao của hình ảnh */
+    top: -50px;
+    left:50px;
+    margin-top: -20px;
+    z-index: 0; /* Đảm bảo hình ảnh nằm phía sau chữ */
+    opacity: 0; /* Ban đầu ẩn hình ảnh */
+    transition: top 0.3s, opacity 0.3s; /* Hiệu ứng chuyển đổi */
+}
+
+#menu li {
+    position: relative;
+    height: 40px; /* Chiều cao của từng mục menu */
+    list-style: none;
+    width: 100%;
+   
+}
+
+#menu li a {
+    display: block;
+    padding: 10px;
+    z-index: 1; /* Đảm bảo chữ nằm trên hình ảnh */
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    width: 100%;
+    text-align: left; /* Đảm bảo chữ nằm bên trái */
+}
+#menu li a:hover { color: green;}
+
+.content {
+    width:1000px;
+    border-top-right-radius: 10px; /* Bo góc phải */
+    border-bottom-right-radius: 10px; /* Bo góc phải */
+    padding: 20px;
+    background-color: #f8f9fa; /* Màu nền cho nội dung */
+    overflow-y: auto; /* Cho phép cuộn dọc khi nội dung vượt quá chiều cao */
+    height:500px;
+    border-right:1px solid rgb(128, 41, 0);
+    
+}
+
+
+.content h1 {
+    margin-top: 0;
+}

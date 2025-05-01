@@ -1,0 +1,148 @@
+
+/* Basic Reset */
+body, h1, h2, p, ul, li, input, button, textarea {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Header */
+.header {
+    background: #e0e0e0;
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Product Categories */
+.product-categories {
+    text-align: center;
+    padding: 30px 0;
+    background: #f7f7f7;
+}
+
+.categories {
+    display: flex;
+    justify-content: center;
+}
+
+.category-item {
+    margin: 0 15px;
+    padding: 15px;
+    background: #ddd;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    background: #e0f7fa;
+    padding: 30px 0;
+}
+
+.about button {
+    margin-top: 10px;
+    padding: 10px 20px;
+}
+
+/* Product Information */
+.product-info {
+    background: #f1f8e9;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.product-details {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.product-item {
+    font-weight: bold;
+}
+
+/* Customer Reviews */
+.reviews {
+    background: #fff9c4;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.review-item {
+    margin: 10px 0;
+}
+
+/* Best-Selling Products */
+.best-sellers {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+}
+
+.product {
+    margin: 0 15px;
+    padding: 10px;
+    background: #ffcdd2;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact {
+    background: #c8e6c9;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.contact form {
+    display: inline-block;
+    text-align: left;
+}
+
+.contact input, .contact textarea {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 300px;
+}
+
+.contact button {
+    padding: 10px 20px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}

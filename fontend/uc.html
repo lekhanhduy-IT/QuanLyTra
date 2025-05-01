@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sơ đồ Use Case - Hệ thống quản lý cửa hàng bán trà</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 100vh;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+        .system {
+            border: 2px solid #007bff;
+            padding: 20px;
+            width: 400px;
+            position: relative;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .actor {
+            position: absolute;
+            text-align: center;
+            width: 100px;
+        }
+        .actor-kh {
+            left: -120px;
+        }
+        .actor-qt {
+            right: -120px;
+        }
+        .use-case {
+            margin: 10px 0;
+            padding: 5px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            background-color: #e7f1ff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="actor actor-kh">Khách Hàng</div>
+    <div class="actor actor-qt">Quản trị viên</div>
+    
+    <div class="system">
+        <h3>Hệ thống quản lý cửa hàng bán trà</h3>
+        
+        <div class="use-case">UC Đăng nhập</div>
+
+        <div class="use-case">UC1: Thêm giỏ hàng
+            <div class="use-case">UC1.1: Tìm sản phẩm</div>
+            <div class="use-case">UC1.2: Thêm sản phẩm vào giỏ hàng</div>
+            <div class="use-case">UC1.3: Sửa số lượng sản phẩm</div>
+            <div class="use-case">UC1.4: Xóa sản phẩm khỏi giỏ hàng</div>
+        </div>
+
+        <div class="use-case">UC2: Đặt hàng</div>
+        <div class="use-case">UC3: Đánh giá sản phẩm
+            <div class="use-case">UC3.1: Thêm đánh giá</div>
+            <div class="use-case">UC3.2: Xóa đánh giá</div>
+        </div>
+        <div class="use-case">UC4: Quản lý tài khoản
+            <div class="use-case">UC4.1: Cập nhật tài khoản</div>
+        </div>
+        <div class="use-case">UC5: Tìm kiếm sản phẩm</div>
+
+        <div class="use-case">UC6: Quản lý sản phẩm
+            <div class="use-case">UC6.1: Thêm sản phẩm</div>
+            <div class="use-case">UC6.2: Sửa sản phẩm</div>
+            <div class="use-case">UC6.3: Xóa sản phẩm</div>
+            <div class="use-case">UC6.4: Tìm sản phẩm</div>
+        </div>
+
+        <div class="use-case">UC7: Quản lý loại sản phẩm
+            <div class="use-case">UC7.1: Thêm loại sản phẩm</div>
+            <div class="use-case">UC7.2: Sửa loại sản phẩm</div>
+            <div class="use-case">UC7.3: Xóa loại sản phẩm</div>
+        </div>
+
+        <div class="use-case">UC8: Quản lý khách hàng
+            <div class="use-case">UC8.1: Xem thông tin khách hàng</div>
+            <div class="use-case">UC8.2: Xem danh sách đơn hàng của khách hàng</div>
+        </div>
+
+        <div class="use-case">UC9: Quản lý đơn hàng
+            <div class="use-case">UC9.1: Thêm tình trạng đơn hàng</div>
+            <div class="use-case">UC9.2: Sửa tình trạng đơn hàng</div>
+            <div class="use-case">UC9.3: Xóa tình trạng đơn hàng</div>
+        </div>
+
+        <div class="use-case">UC10: Quản lý loại tình trạng đơn hàng
+            <div class="use-case">UC10.1: Thêm loại tình trạng</div>
+            <div class="use-case">UC10.2: Sửa loại tình trạng</div>
+            <div class="use-case">UC10.3: Xóa loại tình trạng</div>
+        </div>
+
+        <div class="use-case">UC11: Quản lý đánh giá sản phẩm
+            <div class="use-case">UC11.1: Ẩn đánh giá</div>
+            <div class="use-case">UC11.2: Hiển thị đánh giá</div>
+        </div>
+    </div>
+
+</body>
+</html>
